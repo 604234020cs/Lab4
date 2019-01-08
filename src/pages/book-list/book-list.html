@@ -14,10 +14,11 @@
 
 
 <ion-content padding>
-</ion-list> *ngIf="books">
-  </ion-item **ngfor="let  book of books">
-  <h2>{{book.title}}</h2>
-  <h2>{{book.author}}</h2>
-   <ion-item>
+ <ion-list *ngIf="books">
+  <ion-item *ngFor="let book of books">
+   <h2>{{book.title}}</h2>
+   <h2>{{book.author}}</h2>
+  </ion-item>
+  </ion-list>
 
 </ion-content>

@@ -13,8 +13,9 @@ export class HomePage {
   }
 
   showBookList(categoryName:string){
+    console.log("xxxx");
    this.navCtrl.push(BookListPage,
-    {categoryName}
+    {category:categoryName}
     );
   }
 

@@ -2,7 +2,6 @@ import { Book } from './../../models/book.models';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-//import { Book } from'../../models/book.models';
 
 @Injectable()
 export class BookRestProvider {
@@ -16,8 +15,5 @@ export class BookRestProvider {
   getbookList():Observable<any>{
     return this.http.get<Book>(this.url);
   }
-
-
-
 
 }
